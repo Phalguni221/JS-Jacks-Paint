@@ -12,6 +12,25 @@
 // Solid White	$21.98
 // Solid Yellow	$14.99
 
+function configureListeners() {  
+    var container  = document.querySelectorAll('img')
+    for(let i = 0; i< container.length; i++) {
+        document.getElementById(container[i].id).addEventListener('mouseover', (event)=>{
+            {
+                this.classList.add();
+            }
+
+    })
+
+        document.getElementById(container[i].id).addEventListener('mouseout', (event)=> {
+            {
+                this.classList.remove();
+            }
+
+        })
+    }
+
+
 
 let pn1 = document.querySelector('#pn1');
 pn1.addEventListener('mouseover', function(event) {
@@ -57,3 +76,5 @@ let pn9 = document.querySelector('#pn9')
 pn9.addEventListener('mouseover', function(event) {
     alert('Solid Yellow. Price:$14.99');
 });
+
+}
